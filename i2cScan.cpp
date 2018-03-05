@@ -25,6 +25,7 @@ void i2cScan(){
       SerialScan.println("");
       if( nDevices==0 ){
          SerialScan.println("No I2C devices found\n");
+		 //--- Aucun appareil I2C reconnu
       }else{
          for(address = 1; address < 127; address++ ) if( i2c[address] ){
             SerialScan.print("I2C device found at address 0x");
